@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .button:active {
+    transform: scale(0.95);
+  }
+  .button-yes {
+    background-color: #38a169;
+  }
+  .button-no {
+    background-color: #e53e3e;
+  }
+  .hidden {
+    display: none;
+  }
+  .input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  .heart {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #e53e3e;
+    margin: 20px auto;
+    position: relative;
+    transform: rotate(-45deg);
+  }
+  .heart:before, .heart:after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #e53e3e;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+  }
+  .heart:after {
+    left: 50px;
+    top: 0;
+  }
+  .icon-button {
+    background: #eee;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .icon-button:hover {
+    background: #ddd;
+  }
+  .action-buttons {
+    margin-top: 20px;
+  }
+  .share-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4299e1;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  @media (max-width: 480px) {
+    .container {
+      padding: 16px;
+    }
+    .heart {
+      width: 80px;
+      height: 80px;
+    }
+    .heart:before, .heart:after {
+      width: 80px;
+      height: 80px;
+    }
+  }
